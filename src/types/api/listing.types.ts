@@ -1,0 +1,45 @@
+export type PropertyType = 'apartment' | 'villa' | 'townhouse' | 'duplex' | 'shop' | 'land';
+export type TransactionType = 'sale' | 'rent';
+export type MarketStatus = 'bargain' | 'fair_price' | 'overpriced';
+
+export interface Listing {
+  id: string;
+  title: string;
+  description: string;
+  property_type: PropertyType;
+  transaction_type: TransactionType;
+  price: number;
+  area: number;
+  rooms: number;
+  bathrooms: number;
+  floor?: number;
+  city: string;
+  district: string;
+  street?: string;
+  main_image: string;
+  images: string[];
+  ai_score: number;
+  fair_price: number;
+  market_status: MarketStatus;
+  sell_probability: number;
+  expected_days_on_market: number;
+  views_count: number;
+  broker_id: string;
+  broker_name: string;
+  broker_phone: string;
+  broker_avatar?: string;
+  broker_rating: number;
+  broker_deals_count: number;
+  is_featured: boolean;
+  is_verified: boolean;
+  created_at: string;
+  price_per_meter?: number;
+  amenities?: string[];
+  finish_type?: string;
+  building_age?: number;
+  direction?: string;
+  video_url?: string;
+  ai_recommendations?: string[];
+  expires_at?: string;
+  status?: string;
+}

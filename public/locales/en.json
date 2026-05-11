@@ -1,0 +1,6 @@
+{
+  "app": { "name": "AqarZain", "tagline": "Smart Real Estate Platform" },
+  "nav": { "home": "Home", "listings": "Listings", "search": "Search", "login": "Login", "register": "Register" },
+  "hero": { "title": "Find Your Dream Property with AI", "subtitle": "We help you find the best properties", "cta": "Browse Listings" },
+  "common": { "loading": "Loading...", "error": "An error occurred", "empty": "No results found", "save": "Save", "cancel": "Cancel" }
+}
